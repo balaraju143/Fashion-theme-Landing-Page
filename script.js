@@ -267,3 +267,31 @@ if (copyright) {
         `© ${year} Stackly Fashion. All Rights Reserved.`;
 
 }
+
+const aboutElements =
+document.querySelectorAll(
+".fade-left,.fade-right"
+);
+
+const aboutObserver =
+new IntersectionObserver((entries)=>{
+
+    entries.forEach((entry)=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+},{
+    threshold:0.3
+});
+
+aboutElements.forEach((element)=>{
+
+    aboutObserver.observe(element);
+
+});
