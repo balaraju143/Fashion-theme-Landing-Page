@@ -1236,3 +1236,79 @@ footer{
     }
 
 }
+
+.community-section{
+
+    background:
+    linear-gradient(
+        135deg,
+        #111,
+        #1c1c1c
+    );
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:120px 20px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.community-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:800px;
+
+    margin:auto;
+}
+
+.community-content span{
+
+    color:#FFD700;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+}
+
+.community-content h2{
+
+    font-size:56px;
+
+    margin:20px 0;
+}
+
+.community-content p{
+
+    color:#ddd;
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+}
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:all 1.5s ease;
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
